@@ -4,17 +4,53 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background-image: url('../assets/cafe-img.jpeg'); */
   background-image: url('/src/assets/cafe-img.jpeg');
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
+  padding: 20px;
 }
 
 .app-title {
   color: teal;
   font-family: 'Pacifico', cursive;
   font-size: 50px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.resy-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.reservation-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 20px);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .reservation-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .reservation-card {
+    width: 100%;
+    margin: 10px 0;
+  }
 }

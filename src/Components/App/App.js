@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import Form from '../Form/Form';  
+import ReservationBox from '../ReservationBox/ReservationBox';
 import { getData } from '../../apiCalls'; 
 
 function App() {
@@ -22,16 +23,7 @@ function App() {
     <div className="App">
       <h1 className='app-title'>Turing Cafe Reservations</h1>
       <Form addReservation={addReservation} />
-      <div className='resy-container'>
-        {reservations.map((reservation) => (
-          <div key={reservation.id} className='reservation-card'>
-            <h2>{reservation.name}</h2>
-            <p>Date: {reservation.date}</p>
-            <p>Time: {reservation.time}</p>
-            <p>Number of guests: {reservation.number}</p>
-          </div>
-        ))}
-      </div>
+      <ReservationBox reservations={reservations} />  {/* Use ReservationBox here */}
     </div>
   );
 }
