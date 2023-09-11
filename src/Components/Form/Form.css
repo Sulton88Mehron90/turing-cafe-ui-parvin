@@ -1,0 +1,20 @@
+.form-container {
+    margin: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .form-container input {
+    margin: 5px;
+    padding: 10px;
+  }
+  
+  .form-container button {
+    padding: 10px 20px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
