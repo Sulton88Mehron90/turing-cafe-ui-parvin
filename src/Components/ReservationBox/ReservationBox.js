@@ -1,6 +1,7 @@
 import React from 'react';
 import './ReservationBox.css';
 
+
 const ReservationCard = ({ reservation }) => {
   return (
     <div className='reservation-card'>

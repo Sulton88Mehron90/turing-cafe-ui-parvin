@@ -14,10 +14,16 @@ function App() {
   useEffect(() => {
     getData('reservations').then(data => {
       if (data) {
+        console.log("Fetched data:", data);
         setReservations(data);
+      } else {
+        console.log("No data received");
       }
+    }).catch(error => {
+      console.log("Error fetching data:", error);
     });
   }, []);
+  
 
   return (
     <div className="App">
